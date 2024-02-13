@@ -19,7 +19,7 @@ def index() -> rx.Component:
           links(),
           max_width=styles.max_width,
           width="100%",
-          margin_y=styles.size.BIG.value,
+          margin_y=styles.size.MEDIUM.value,
           position="relative",
           padding_bottom="20em"
         ),

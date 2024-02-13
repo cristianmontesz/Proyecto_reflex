@@ -10,9 +10,12 @@ from App_reflex.styles.Colors import color as color
 def header() -> rx.component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(name="Cristian Montes"),
+            rx.avatar(
+                name="Cristian Montes",
+                color= color.CONTENT.value 
+                ),
             rx.vstack(
-                rx.text("CRISTIAN MONTES ", size="lg", color=textcolor.HEADER.value),
+                rx.heading("CRISTIAN MONTES ", size="lg", color=textcolor.HEADER.value),
                 rx.text(
                     "@CristianM ",
                     margin_top="0px !important",
@@ -27,9 +30,10 @@ def header() -> rx.component:
             
         ),
         rx.text("""Soy tecnologo en Analisis y Desarrollo de Software, 
-                   Actualmente me encuentro desarrollando las practics en la empresa VC-MEDIOS, 
-                   por lo cual me quedan 3 meses para la finaizacion. ¡Bienvenid@s! """,
-                   color= textcolor.HEADER.value
+                   Actualmente me encuentro desarrollando las practics en la empresa 
+                   VC-MEDIOS, por lo cual me quedan 3 meses para la finaizacion. ¡Bienvenid@s! """,
+                   color= textcolor.HEADER.value,
+                   widht="100%"
                    ),
                 align_items="start"
     )

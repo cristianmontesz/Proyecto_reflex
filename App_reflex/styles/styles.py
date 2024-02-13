@@ -23,13 +23,14 @@ BASE_STYLE = {
          "size":"lg",
          "color": TextColor.HEADER.value,
          "font_family": font.TITLE.value,
+         "text_align": "left"
      },
     rx.button: {
         "width": "100%",
         "height": "100%",
         "display": "block",
         "padding": size.SMALL.value,
-        "border_radius": size.DEFAULT.value,
+        "border_radius": size.SMALL.value,
         "color": TextColor.HEADER.value,
         "background_color": color.PRIMARY.value,
         "_hover": {
@@ -41,14 +42,14 @@ BASE_STYLE = {
 #styke_button
 Button_title_style = dict(
     font_family= font.DEFAUL.value,
-    fond_size=size.DEFAULT.value,
+    fond_size=size.MEDIUM.value,
     color=TextColor.HEADER.value,
-    size="lg"
+    size= size.DEFAULT.value
 )
 
 Navbar_title_style = dict(
     font_family= font.LOGO.value,
-    fond_size=size.LARGE.value,
+    fond_size=size.MEDIUM.value,
     
 )
 
@@ -61,9 +62,9 @@ Button_body_style = dict(
 title_style= dict(
     width="100%",
     font_family= font.DEFAUL.value,
-    padding_top = size.DEFAULT.value,
+    padding_top = size.MEDIUM.value,
     color=TextColor.HEADER.value,
-    size="lg",
+    
     
     )
 

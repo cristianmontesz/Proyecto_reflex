@@ -4,6 +4,7 @@ from .Colors import color as color
 from .Colors import TextColor as TextColor
 from .fonts import font as font
 
+
 #constants
 max_width="600px",
 
@@ -14,11 +15,16 @@ class size(Enum):
      DEFAULT="1em"
      LARGE="1.5em"
      BIG="2em"
+
+
+         
      
 #BASES
 BASE_STYLE = {
     "font_family": font.DEFAUL.value,
     "background_color": color.BACKGROUND.value,
+    "width": "100%",
+    
      rx.heading:{
          "size":"lg",
          "color": TextColor.HEADER.value,
@@ -34,7 +40,7 @@ BASE_STYLE = {
         "color": TextColor.HEADER.value,
         "background_color": color.PRIMARY.value,
         "_hover": {
-            "background_color": color.SECUNDARY.value,
+        "background_color": color.SECUNDARY.value,
         }
     },
 }     

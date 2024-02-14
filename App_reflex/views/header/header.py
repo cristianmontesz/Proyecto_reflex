@@ -9,14 +9,17 @@ from App_reflex.styles.Colors import color as color
 
 def header() -> rx.component:
     return rx.vstack(
-            rx.hstack(
-                rx.avatar(name="CRISTIAN MONTES", 
+        rx.hstack(
+                rx.avatar(
+                name="CRISTIAN MONTES", 
                 src="Avatar.jpg",
                 padding="2px",
                 border="4px",
                 border_color=color.SECUNDARY.value,
-                color= color.CONTENT.value 
-                ),
+                color= color.CONTENT.value,
+                
+            ),
+                
             rx.vstack(
                 rx.heading("CRISTIAN MONTES ", 
                            color=textcolor.HEADER.value,
@@ -26,9 +29,9 @@ def header() -> rx.component:
                     "@CristianM ",
                     margin_top="0px !important",
                     color=textcolor.HEADER.value,
-                    text_aling="left"
+                    
                 ),
-                width="100%",
+                align_items="start",
                 
             ),
         ),

@@ -7,8 +7,8 @@ import App_reflex.styles.styles as Styles
 def navbar() -> rx. component: 
    return rx.hstack(
        rx.box(
-         rx.span("APP - ", color=color.CONTENT.value),
-         rx.span("REFLEX", color=color.CONTENT.value),
+         rx.span("APP - ", color=color.BACKGROUND.value),
+         rx.span("REFLEX", color=color.BACKGROUND.value),
          styles=Styles.Navbar_title_style
           
        ),

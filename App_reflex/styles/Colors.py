@@ -5,8 +5,8 @@ from enum import Enum
 class color(Enum):
     PRIMARY = "#08BEDA"
     SECUNDARY = "#950303"
-    BACKGROUND = "#000706"
-    CONTENT = "#050606"
+    BACKGROUND = "#050606"
+    CONTENT = "#F7300C"
     
 class TextColor(Enum):
     HEADER = "#FDFEFE"

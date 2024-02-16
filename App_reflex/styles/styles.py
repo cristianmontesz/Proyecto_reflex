@@ -25,6 +25,7 @@ BASE_STYLE = {
     "background_color": color.BACKGROUND.value,
     "width": "100%",
     
+    
      rx.heading:{
          "size":"lg",
          "color": TextColor.HEADER.value,

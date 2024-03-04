@@ -10,10 +10,10 @@ from App_reflex.styles.Colors import color as color
 
 def header() -> rx.Component:
     return rx.chakra.vstack(
-        rx.chakra.hstack(
+        rx.chakra.flex(
                 rx.chakra.avatar(
-                name="CRISTIAN MONTES", 
                 src="Avatar.jpg",
+                fallback="CM",
                 padding="2px",
                 border="4px",
                 border_color=color.SECUNDARY.value,

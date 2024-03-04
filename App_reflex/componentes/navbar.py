@@ -4,11 +4,11 @@ from App_reflex.styles.Colors import TextColor as textcolor
 from App_reflex.styles.Colors import color as color
 import App_reflex.styles.styles as Styles
 
-def navbar() -> rx. component: 
-   return rx.hstack(
-       rx.box(
-         rx.span("APP - ", color=color.BACKGROUND.value),
-         rx.span("REFLEX", color=color.BACKGROUND.value),
+def navbar() -> rx.Component: 
+   return rx.chakra.hstack(
+       rx.chakra.box(
+         rx.chakra.span("APP - ", color=color.BACKGROUND.value),
+         rx.chakra.span("REFLEX", color=color.BACKGROUND.value),
          styles=Styles.Navbar_title_style
           
        ),

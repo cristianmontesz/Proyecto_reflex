@@ -26,13 +26,13 @@ BASE_STYLE = {
     "width": "100%",
     
     
-     rx.heading:{
+     rx.chakra.heading:{
          "size":"lg",
          "color": TextColor.HEADER.value,
          "font_family": font.TITLE.value,
          "text_align": "left"
      },
-    rx.button: {
+    rx.chakra.button: {
         "width": "100%",
         "height": "100%",
         "display": "block",

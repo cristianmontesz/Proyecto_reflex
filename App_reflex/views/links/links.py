@@ -4,8 +4,8 @@ from App_reflex.componentes.title import title
 from App_reflex.styles.styles import size as size
 
 
-def links() -> rx.component:
-    return rx.vstack(
+def links() -> rx.Component:
+    return rx.chakra.vstack(
         title("Redes Sociales"),
         link_button("GitHub", "https://github.com/"),
         link_button("Youtube", "https://www.youtube.com"),

@@ -8,10 +8,10 @@ from App_reflex.styles.Colors import TextColor as textcolor
 from App_reflex.styles.Colors import color as color
 
 
-def header() -> rx.component:
-    return rx.vstack(
-        rx.hstack(
-                rx.avatar(
+def header() -> rx.Component:
+    return rx.chakra.vstack(
+        rx.chakra.hstack(
+                rx.chakra.avatar(
                 name="CRISTIAN MONTES", 
                 src="Avatar.jpg",
                 padding="2px",
@@ -21,12 +21,12 @@ def header() -> rx.component:
                 
             ),
                 
-            rx.vstack(
-                rx.heading("CRISTIAN MONTES ", 
+            rx.chakra.vstack(
+                rx.chakra.heading("CRISTIAN MONTES ", 
                            color=textcolor.HEADER.value,
                            spacing=size.MEDIUM.value,
                            ),
-                rx.text(
+                rx.chakra.text(
                     "@CristianM ",
                     margin_top="0px !important",
                     color=textcolor.HEADER.value,
@@ -36,11 +36,11 @@ def header() -> rx.component:
                 
             ),
         ),
-        rx.flex(
+        rx.chakra.flex(
             info_text("+6", "Meses de experiencia laboral"),
             
         ),
-        rx.text("""Soy tecnologo en Analisis y Desarrollo de Software, 
+        rx.chakra.text("""Soy tecnologo en Analisis y Desarrollo de Software, 
                    Actualmente me encuentro desarrollando las practics en la empresa 
                    VC-MEDIOS, por lo cual me quedan 3 meses para la finaizacion. ¡Bienvenid@s! """,
                    color= textcolor.HEADER.value,

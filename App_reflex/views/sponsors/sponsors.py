@@ -2,11 +2,11 @@ import reflex as rx
 from App_reflex.componentes.title import title
 
 
-def header() -> rx.component:
-    return rx.Vstack(
+def header() -> rx.Component:
+    return rx.chakra.Vstack(
         title("Colaboran"),
         
-        rx.hstack(
+        rx.chakra.hstack(
            scr="" 
         ),
     )

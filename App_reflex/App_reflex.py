@@ -11,10 +11,10 @@ class State(rx.State):
 
 
 def index() -> rx.Component:
-  return rx.box(
+  return rx.chakra.box(
     navbar(),
-    rx.center(
-       rx.vstack(
+    rx.chakra.center(
+       rx.chakra.vstack(
           header(),
           links(),
           max_width=styles.max_width,

@@ -4,9 +4,9 @@ from App_reflex.styles.styles import size as size
 from App_reflex.styles.Colors import TextColor as Textcolor
 from App_reflex.styles.Colors import color as color
 
-def info_text(title:str, body:str) -> rx.component:
-    return rx.box(
-        rx.span(title, 
+def info_text(title:str, body:str) -> rx.Component:
+    return rx.chakra.box(
+        rx.chakra.span(title, 
             font_weight="bold",
             color="red"),
         f" {body}", 

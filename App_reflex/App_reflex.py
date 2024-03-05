@@ -4,6 +4,7 @@ from App_reflex.componentes.navbar import navbar
 from App_reflex.views.header.header import header
 from App_reflex.views.links.links import links
 from App_reflex.componentes.footer import footer
+from App_reflex.views.sponsors.sponsors import sponsors
 import App_reflex.styles.styles as styles
 
 class State(rx.State):
@@ -13,10 +14,11 @@ class State(rx.State):
 def index() -> rx.Component:
   return rx.chakra.box(
     navbar(),
-    rx.chakra.center(
-       rx.chakra.vstack(
+      rx.chakra.center(
+        rx.chakra.vstack(
           header(),
           links(),
+          sponsors(),
           max_width=styles.max_width,
           width="100%",
           margin_y=styles.size.MEDIUM.value,

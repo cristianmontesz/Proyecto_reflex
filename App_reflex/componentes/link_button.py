@@ -12,9 +12,9 @@ def link_button(title: str, body: str, image:str, url: str) -> rx.Component:
                 rx.chakra.hstack(
                      rx.chakra.image(
                        src=image,
-                       width= size.MEDIUM.value,
-                       height=size.MEDIUM.value,
-                       margin=size.MEDIUM.value,
+                       width= size.DEFAULT.value,
+                       height=size.DEFAULT.value,
+                       margin=size.DEFAULT.value,
                        alt=title 
                      ),
                      rx.chakra.vstack(
@@ -28,9 +28,9 @@ def link_button(title: str, body: str, image:str, url: str) -> rx.Component:
                                     style=styles.Button_body_style), 
                   ),
                 align_items="start",
-                spacing= Spacing.SMALL.value,
-                padding_y= size.SMALL.value,
-                padding_right=size.SMALL.value
+                spacing= Spacing.DEFAULT.value,
+                padding_y= size.DEFAULT.value,
+                padding_right=size.DEFAULT.value
                 ),
         href= url,
         is_external=True,

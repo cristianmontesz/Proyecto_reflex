@@ -6,7 +6,7 @@ from App_reflex.styles.Colors import TextColor as textcolor
 from App_reflex.styles.Colors import color as color
 
 
-def link_button(title: str, body: str, image:str, url: str) -> rx.Component:
+def link_button(title: str, image:str, url: str) -> rx.Component:
     return rx.chakra.link(
         rx.chakra.button(
                 rx.chakra.hstack(
@@ -23,9 +23,7 @@ def link_button(title: str, body: str, image:str, url: str) -> rx.Component:
                                         style=styles.Button_title_style),
                                         margin=size.MEDIUM.value
                     ),
-                     rx.chakra.text(body,
-                                    size=Spacing.SMALL.value,
-                                    style=styles.Button_body_style), 
+                     
                   ),
                 align_items="start",
                 spacing= Spacing.DEFAULT.value,

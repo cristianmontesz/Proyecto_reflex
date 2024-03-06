@@ -23,7 +23,7 @@ def header() -> rx.Component:
                     color=textcolor.BODY.value,
                     bg=color.CONTENT.value,
                     padding="2px",
-                    border=f"4px solid {color.SECUNDARY.value}"
+                    border=f"2px solid {color.SECUNDARY.value}"
                 ), 
                 position="relative"
             ),

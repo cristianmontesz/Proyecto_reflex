@@ -9,25 +9,21 @@ def links() -> rx.Component:
         title("Redes Sociales"),
         link_button(
             "GitHub", 
-            "(Repositorio para verificar experiencia)",
             "iconos/github.svg",
             const.GITHUB_URL
                     ),
         link_button(
             "Youtube",
-            "(Paginas educativas de programacion)",
-            "iconos/youtube.sgv",
+            "/iconos/youtube.svg",
             const.YOUTUBE_URL
             ),
         link_button(
             "Facebook", 
-            "(Redes sociales)",
             "iconos/facebook.svg",
             const.FACEBOOK_URL
              ),
         link_button(
             "linkedin", 
-            "(Hoja de vida)",
             "iconos/linkedin.svg",
             const.LINKEDIN_URL
             ),

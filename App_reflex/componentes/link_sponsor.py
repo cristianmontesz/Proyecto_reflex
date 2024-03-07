@@ -6,7 +6,8 @@ def link_sponsor(  imagen: str, url: str) -> rx.Component:
     return rx.chakra.link(
         rx.chakra.image(
             height=size.BIG.value,
-            src=imagen
+            src=imagen,
+            width="auto"
         ),
         href=url,
         is_external=True

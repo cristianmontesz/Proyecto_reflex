@@ -5,7 +5,12 @@ from App_reflex.styles.Colors import color as color
 
 def footer() -> rx.Component:
     return rx.chakra.vstack(
-        rx.chakra.image(src="favicon.ico"),
+        rx.chakra.image(
+            src="iconos/footer.svg",
+            height=size.BIG.value,
+            weight=size.BIG.value,
+            alt="logotipo"
+            ),
         rx.chakra.text("2024 montestapiero0127@gmail.com "),
         margin_bottom=size.BIG.value,
         spacing=size.DEFAULT.value,

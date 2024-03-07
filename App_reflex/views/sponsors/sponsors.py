@@ -9,16 +9,18 @@ from App_reflex.componentes.link_sponsor import link_sponsor
 def sponsors() -> rx.Component:
     return rx.chakra.vstack(
         title("Colaboran"),
-            rx.chakra.hstack(
+            rx.chakra.responsive_grid(
                link_sponsor(
                "MPV.png",
-               const.MVP_URL
+               const.MVP_URL,
+               
            ),
                link_sponsor(
                "GITHUB.png",
                const.GITHUB_URL
         ),
-        spacing=size.DEFAULT.value       
+        spacing=size.DEFAULT.value,
+        columns=[1, 2]       
     ),
      width="100%",
      align_items="start"         

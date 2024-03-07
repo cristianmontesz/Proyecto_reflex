@@ -14,7 +14,7 @@ class size(Enum):
      MEDIUM="0.8em"
      DEFAULT="1em"
      LARGE="1.5em"
-     BIG="2em"
+     BIG="4em"
      
 class Spacing(Enum):
     ZERO = "0"

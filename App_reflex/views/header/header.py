@@ -21,7 +21,7 @@ def header() -> rx.Component:
                     src="/Avatar.jpg",
                     fallback="RU",
                     sizes="40",
-                    width="100px",  # Establecer el ancho del avatar
+                    width="100px",  
                     height="100px",
                     color=textcolor.BODY.value,
                     bg=color.CONTENT.value,

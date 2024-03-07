@@ -8,7 +8,7 @@ from App_reflex.styles.Colors import TextColor as textcolor
 from App_reflex.styles.Colors import color as color
 from App_reflex.styles.styles import size, Spacing
 import App_reflex.constants as const
-
+from typing import Literal as Literal
 
 
 
@@ -19,13 +19,17 @@ def header() -> rx.Component:
                 rx.chakra.avatar(
                     name="Cristian Montes",
                     src="/Avatar.jpg",
-                    radius="full",
+                    fallback="RU",
+                    sizes="40",
+                    width="100px",  # Establecer el ancho del avatar
+                    height="100px",
                     color=textcolor.BODY.value,
                     bg=color.CONTENT.value,
                     padding="2px",
                     border=f"2px solid {color.SECUNDARY.value}"
                 ), 
-                position="relative"
+                position="relative",
+                widht="100%",
             ),
                 
             rx.chakra.vstack(

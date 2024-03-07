@@ -3,7 +3,7 @@ from enum import Enum
 from .Colors import color as color
 from .Colors import TextColor as TextColor
 from .fonts import font, FontWeight
-
+from typing import Literal as Literal
 
 #constants
 max_width="600px",

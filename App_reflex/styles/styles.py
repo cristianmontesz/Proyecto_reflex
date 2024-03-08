@@ -45,9 +45,7 @@ BASE_STYLE = {
     "font_weight": FontWeight.LIGHT.value,
     "background_color": color.BACKGROUND.value,
     "width": "100%",
-    
-    
-     rx.chakra.heading:{
+      rx.chakra.heading:{
          "size":"lg",
          "color": TextColor.HEADER.value,
          "font_family": font.TITLE.value,
@@ -66,12 +64,13 @@ BASE_STYLE = {
         "background_color": color.PRIMARY.value,
         }
     },
+    
 }     
 
 #styke_button
 Button_title_style = dict(
     font_family= font.DEFAUL.value,
-    font_weight=FontWeight.MEDIUM.value,
+    font_weight=FontWeight.BOLD.value,
     fond_size=size.BIG.value,
     color=TextColor.HEADER.value,
     size= size.DEFAULT.value
@@ -83,14 +82,12 @@ Navbar_title_style = dict(
     fond_size=size.MEDIUM.value,
     
 )
-
 Button_body_style = dict(
     font_family= font.DEFAUL.value,
     font_weight=FontWeight.MEDIUM.value,
     fond_size=size.MEDIUM.value,
     color=TextColor.HEADER.value
 )
-
 title_style= dict(
     width="100%",
     font_family= font.DEFAUL.value,
@@ -98,8 +95,8 @@ title_style= dict(
     padding_top = size.MEDIUM.value,
     color=TextColor.HEADER.value,
     
-    
-    )
+)
+
 
 
 

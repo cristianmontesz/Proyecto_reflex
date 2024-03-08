@@ -18,13 +18,12 @@ def header() -> rx.Component:
               rx.chakra.box( 
                 rx.chakra.avatar(
                     name="Cristian Montes",
-                    src="/Avatar.jpg",
+                    src="/aprender.png",
                     fallback="RU",
                     sizes="40",
                     width="100px",  
                     height="100px",
                     color=textcolor.BODY.value,
-                    bg=color.CONTENT.value,
                     padding="2px",
                     border=f"2px solid {color.SECUNDARY.value}"
                 ), 
@@ -33,12 +32,12 @@ def header() -> rx.Component:
             ),
                 
             rx.chakra.vstack(
-                rx.chakra.heading("CRISTIAN MONTES ", 
+                rx.chakra.heading("APRENDE A PROGRAMAR ", 
                            color=textcolor.HEADER.value,
                            spacing=size.MEDIUM.value,
                            ),
                 rx.chakra.text(
-                    "@CristianM ",
+                    "@Aprogramar ",
                     margin_top="0px !important",
                     color=textcolor.HEADER.value,
                     
@@ -70,12 +69,12 @@ def header() -> rx.Component:
             spacing=Spacing.DEFAULT.value
         ),
         rx.chakra.flex(
-            info_text("+6", "Meses de experiencia laboral"),
+            info_text("+3", "Meses de aprendizaje en cursos totalmente gratis  "),
             
         ),
-        rx.chakra.text("""Soy tecnologo en Analisis y Desarrollo de Software, 
-                           Actualmente me encuentro desarrollando las practics en la empresa 
-                           VC-MEDIOS, por lo cual me quedan 3 meses para la finaizacion. ¡Bienvenid@s! """,
+        rx.chakra.text("""En esta pagina tendras un recorrido por diferentes paginas web que te ayudaran
+                       con tu proceso de aprendizaje y te aportaran conocimientos escenciales en el area 
+                       de analisis y desarrollo web. ¡Bienvenid@s! """,
                    font_size= size.MEDIUM.value,
                    color= textcolor.HEADER.value,
                    widht="100%"

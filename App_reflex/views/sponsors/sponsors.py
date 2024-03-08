@@ -19,10 +19,20 @@ def sponsors() -> rx.Component:
                "GITHUB.png",
                const.GITHUB_URL
         ),
+               link_sponsor(
+               "Cisco.png",
+               const.CISCONW_URL
+        ),
+                link_sponsor(
+               "Empleo.png",
+               const.CISCONW_URL
+        ),
+        
         spacing=size.DEFAULT.value,
-        columns=[1, 2]       
+        columns=[1, 4]       
     ),
-     width="100%",
-     align_items="start"         
+        width="100%",
+        align_items="start",
+              
 )
        

@@ -8,7 +8,7 @@ from App_reflex.componentes.link_sponsor import link_sponsor
 
 def sponsors() -> rx.Component:
     return rx.chakra.vstack(
-        title("Colaboran"),
+        title("Colaboran: "),
             rx.chakra.responsive_grid(
                link_sponsor(
                "MPV.png",

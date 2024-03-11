@@ -62,6 +62,7 @@ def links() -> rx.Component:
         width="100%",
         align_items="start",  
         spacing=size.MEDIUM.value,
+     
     )
 
    

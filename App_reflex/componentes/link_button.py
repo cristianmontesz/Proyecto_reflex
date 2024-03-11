@@ -1,4 +1,5 @@
 import reflex as rx
+from enum import Enum
 import App_reflex.styles.styles  as styles
 from App_reflex.styles.styles import size, Spacing
 from App_reflex.styles.styles import size as size
@@ -10,36 +11,39 @@ def link_button(title: str,
                 body: str, 
                 image:str, 
                 url: str) -> rx.Component:
-    return rx.chakra.link(
-              rx.chakra.button(
-                rx.chakra.hstack(
+    return rx.chakra.button(
+                 rx.chakra.hstack(
                   rx.chakra.image(
                     src=image,
-                       width= size.DEFAULT.value,
-                       height=size.DEFAULT.value,
-                       margin=size.DEFAULT.value,
-                       alt=title 
+                width=size.LARGE.value,
+                height=size.LARGE.value,
+                margin=size.MEDIUM.value,
+                alt=title
                        ),
                             rx.chakra.vstack(
                                 rx.chakra.text(
                                 title, 
-                                 size=Spacing.SMALL.value,
-                                   style=styles.Button_title_style,
+                                size=Spacing.SMALL.value,
+                                style=styles.Button_title_style,
                                        ),
                                       rx.chakra.text(
                                         body,
-                                         size=Spacing.VERY_SMALL.value,
-                                           style=styles.Button_body_style,
+                                        size=Spacing.VERY_SMALL.value,
+                                        style=styles.Button_body_style,
                                             ),
-                       align_items="start",
-                       spacing= Spacing.VERY_SMALL.value,
-                       padding_y= size.SMALL.value,
-                       padding_right=size.DEFAULT.value
+                align_items="start",
+                spacing=Spacing.VERY_SMALL.value,
+                padding_y=size.SMALL.value,
+                padding_right=size.SMALL.value,
+               
+                      
                       ),
                             width="100%",
+                            align="center",
                             href= url,
                             is_external=True,
 
-                )
+                ),
+                 width="100%"
               )
-    )
+    

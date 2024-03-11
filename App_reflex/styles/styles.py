@@ -14,7 +14,7 @@ class size(Enum):
      MEDIUM="0.8em"
      DEFAULT="1em"
      LARGE="1.5em"
-     BIG="4em"
+     BIG="5em"
      
 class Spacing(Enum):
     ZERO = "0"
@@ -53,18 +53,22 @@ BASE_STYLE = {
          "text_align": "left"
      },
     rx.chakra.button: {
-        "width": "100%",
+        "width": "auto",
         "height": "100%",
-        "display": "block",
         "padding": size.SMALL.value,
-        "border_radius": size.SMALL.value,
+        "border_radius": size.DEFAULT.value,
         "color": TextColor.HEADER.value,
         "background_color": color.SECUNDARY.value,
+        "white_space": "normal",
+        "text_align": "start",
         "_hover": {
         "background_color": color.PRIMARY.value,
         }
     },
-    
+    rx.chakra.link:{
+        "text_decoration": "none",
+        "_hover":{}
+    }
 }     
 
 #styke_button

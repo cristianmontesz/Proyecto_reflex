@@ -21,9 +21,8 @@ def index() -> rx.Component:
           sponsors(),
           max_width=styles.max_width,
           width="100%",
-          margin_y=styles.size.MEDIUM.value,
-          position="relative",
-          padding_bottom="20em"
+          margin_y=styles.size.DEFAULT.value,
+          padding_bottom="30em"
         ),
       ),
       footer()

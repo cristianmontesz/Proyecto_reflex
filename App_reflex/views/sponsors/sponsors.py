@@ -13,19 +13,23 @@ def sponsors() -> rx.Component:
                link_sponsor(
                "MPV.png",
                const.MVP_URL,
+               "MPV"
                
            ),
                link_sponsor(
                "GITHUB.png",
-               const.GITHUB_URL
+               const.GITHUB_URL,
+               "Github"
         ),
                link_sponsor(
                "Cisco.png",
-               const.CISCONW_URL
+               const.CISCONW_URL,
+               "Cisco networking"
         ),
                 link_sponsor(
                "Empleo.png",
-               const.CISCONW_URL
+               const.CISCONW_URL,
+               "capacitate para el empleo"
         ),
         
         spacing=size.DEFAULT.value,

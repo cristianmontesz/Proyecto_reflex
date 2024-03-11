@@ -46,18 +46,22 @@ def header() -> rx.Component:
                  link_icon(
                       "/iconos/github.svg",
                       const.GITHUB_URL,
+                      "Github"
                     ),
                  link_icon(
                       "/iconos/facebook.svg",
                       const.FACEBOOK_URL,
+                      "Facebook"
                     ),
                  link_icon(
                       "/iconos/youtube.svg",
                       const.YOUTUBE_URL,
+                      "Youtube"
                     ),
                  link_icon(
                       "/iconos/linkedin.svg",
                       const.LINKEDIN_URL,
+                      "linkedin"
                       ),
                     spacing=Spacing.LARGE.value,
                     padding_top=size.SMALL.value

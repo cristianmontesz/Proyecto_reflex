@@ -6,9 +6,9 @@ def link_icon(image: str, url: str, alt: str) -> rx.Component:
     return rx.chakra.link(
         rx.chakra.image(
             src=image,
-            width= size.DEFAULT.value,
-            height=size.BIG.value,
-            weight=size.BIG.value,
+            width= size.MEDIUM.value,
+            height=size.DEFAULT.value,
+            weight=size.DEFAULT.value,
             alt=alt
         ),
         href= url,

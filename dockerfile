@@ -25,7 +25,11 @@ RUN git clone https://github.com/cristianmontesz/Proyecto_reflex.git
 
 WORKDIR /Proyecto_reflex
 
-RUN pip3 install -r requirements.txt
+COPY requirements.txt .
+
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 # Comando para ejecutar el script Python
 CMD python3 /Proyecto_reflex/App_reflex/App_reflex.py

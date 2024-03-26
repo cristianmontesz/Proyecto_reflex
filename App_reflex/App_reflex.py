@@ -7,6 +7,7 @@ from App_reflex.componentes.footer import footer
 from App_reflex.views.sponsors.sponsors import sponsors
 import App_reflex.styles.styles as styles
 
+
 class State(rx.State):
   pass
 

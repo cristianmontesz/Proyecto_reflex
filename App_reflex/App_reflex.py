@@ -1,10 +1,10 @@
 # Creacion app 
 import reflex as rx
-from App_reflex.componentes.navbar import navbar
-from App_reflex.views.header.header import header
-from App_reflex.views.links.links import links
-from App_reflex.componentes.footer import footer
-from App_reflex.views.sponsors.sponsors import sponsors
+from .componentes.navbar import navbar
+from .views.header.header import header
+from .views.links.links import links
+from .componentes.footer import footer
+from .views.sponsors.sponsors import sponsors
 import App_reflex.styles.styles as styles
 
 
@@ -38,4 +38,3 @@ app = rx.App(
    
 )
 app.add_page(index)
-app.compile()

@@ -1,33 +1,30 @@
-FROM ubuntu:latest
-
-# Actualiza la lista de paquetes disponibles e instala actualizaciones
-RUN apt-get update && apt-get upgrade -y
+# Usa una imagen base de Ubuntu con Python 3.8 o superior
+FROM python:3.8-slim
 #
-# # Instala Python 3 y pip
-RUN apt-get install -y python3 python3-pip
+# # Actualiza la lista de paquetes disponibles e instala git
+RUN apt-get update && apt-get install -y git && apt-get clean
 #
-# # Instala herramientas adicionales
-RUN apt-get install -y git
-#
-# # Opcional: Instalación de virtualenv
-RUN pip3 install virtualenv
-#
-# # Clona tu repositorio
-RUN git clone https://github.com/cristianmontesz/Proyecto_reflex.git /Proyecto_reflex
-#
-# # Define el directorio de trabajo dentro del contenedor
+# # Crea el directorio de trabajo dentro del contenedor
 WORKDIR /App_reflex
 #
-# # Opcional: Crea un entorno virtual y actívalo
-RUN virtualenv venv
-ENV PATH="/Proyecto_reflex/venv/bin:$PATH"
+# # Opcional: Instalación de virtualenv y activación
+RUN python3 -m venv .venv
+# # Nota: La activación del entorno virtual en Dockerfile con 'source' no es efectiva entre comandos RUN
+#
+# # Copia el archivo requirements.txt al directorio de trabajo
+COPY requirements.txt .
 #
 # # Instala las dependencias de tu proyecto
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
+# #
+# Instala las dependencias de tu proyecto, incluyendo Reflex
+RUN pip install reflex
+# # Clona tu repositorio (ajusta según necesidad)
+RUN git clone https://github.com/cristianmontesz/Proyecto_reflex.git /Proyecto_reflex
 #
-# # Copia el resto de tu proyecto
+# # Copia el resto de tu proyecto (ajusta según necesidad)
 COPY . .
 #
-# # Comando para ejecutar el script Python
-CMD ["python3", "/Proyecto_reflex/App_reflex/App_reflex.py"]
+# # Ejecuta tu aplicación
+CMD ["python", "/Proyecto_reflex/App_reflex/App_reflex.py"]

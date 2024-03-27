@@ -1,4 +1,4 @@
-* .venv/
+*.venv/
 *.db
 *.py[cod]
 .web

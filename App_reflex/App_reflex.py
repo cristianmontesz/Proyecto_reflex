@@ -1,13 +1,10 @@
-import sys
-sys.path.append("home/cmontes/proyecto_software/App_reflex/")
-
 # Creacion app 
 import reflex as rx
-from componentes.navbar import navbar
-from views.header.header import header
-from views.links.links import links
-from componentes.footer import footer
-from views.sponsors.sponsors import sponsors
+from .componentes.navbar import navbar
+from .views.header.header import header
+from .views.links.links import links
+from .componentes.footer import footer
+from .views.sponsors.sponsors import sponsors
 import App_reflex.styles.styles as styles
 
 

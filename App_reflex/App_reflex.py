@@ -1,3 +1,6 @@
+import sys
+sys.path.append("home/cmontes/proyecto_software/App_reflex/")
+
 # Creacion app 
 import reflex as rx
 from componentes.navbar import navbar

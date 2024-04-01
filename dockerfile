@@ -5,7 +5,7 @@ FROM python:3.8-slim
 RUN apt-get update && apt-get install -y git && apt-get clean
 #
 # # Crea el directorio de trabajo dentro del contenedor
-WORKDIR /App_reflex
+WORKDIR /Proyecto_reflex
 #
 # # Opcional: Instalación de virtualenv y activación
 RUN python3 -m venv .venv
